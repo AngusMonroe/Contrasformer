@@ -59,73 +59,12 @@ def self_loop(g):
     return new_g
 
 name2path = {
-    'braindata': '/home/jiaxing/workspace/data/braindata/Neurocon_braindata.bin',
-    'atlas_200regions_5mm': '/home/jiaxing/workspace/data/braindata/Neurocon_braindata_atlas_200regions_5mm.bin',
-    'atlas_200regions_8mm': '/home/jiaxing/workspace/data/braindata/Neurocon_braindata_atlas_200regions_8mm.bin',
-    'atlas_48regions': '/home/jiaxing/workspace/data/braindata/Neurocon_braindata_atlas_48regions.bin',
-    'kmeans_50regions': '/home/jiaxing/workspace/data/braindata/Neurocon_braindata_kmeans_50regions.bin',
-    'ward_500regions': '/home/jiaxing/workspace/data/braindata/Neurocon_braindata_ward_500regions.bin',
-    'ABIDE_kmeans50': '/home/jiaxing/workspace/data/braindata/Neurocon_ABIDE_kmeans_50regions.bin',
-    'ABIDE_kmeans50_100samples': '/home/jiaxing/workspace/data/braindata/Neurocon_ABIDE_kmeans_50regions_100samples.bin',
-    'ABIDE_kmeans50_male': '/home/jiaxing/workspace/data/braindata/Neurocon_ABIDE_kmeans_50regions_male.bin',
-    'ABIDE_kmeans50_children': '/home/jiaxing/workspace/data/braindata/Neurocon_ABIDE_kmeans_50regions_children.bin',
-    'ABIDE_kmeans50_adolescents': '/home/jiaxing/workspace/data/braindata/Neurocon_ABIDE_kmeans_50regions_adolescents.bin',
-    'ABIDE_male': '/home/jiaxing/workspace/data/braindata/Neurocon_ABIDE_male_atlas_116regions.bin',
-    'ABIDE_children': '/home/jiaxing/workspace/data/braindata/Neurocon_ABIDE_children_atlas_116regions.bin',
-    'ABIDE_eyesclosed': '/home/jiaxing/workspace/data/braindata/Neurocon_ABIDE_eyesclosed_atlas_116regions.bin',
-    'ABIDE_adolescents': '/home/jiaxing/workspace/data/braindata/Neurocon_ABIDE_adolescents_atlas_116regions.bin',
-
-    'abide_full_site_schaefer100': '/data/jiaxing/brain_binfile/abide_full_schaefer100.bin',
-
-    'abide_full_schaefer100': '/data/jiaxing/brain_binfile/abide_full_schaefer100.bin',
-    'abide_male_full_schaefer100': '/data/jiaxing/brain_binfile/abide_male_full_schaefer100.bin',
-    'abide_female_full_schaefer100': '/data/jiaxing/brain_binfile/abide_female_full_schaefer100.bin',
-    'abide_children_full_schaefer100': '/data/jiaxing/brain_binfile/abide_children_full_schaefer100.bin',
-    'abide_eyesclosed_full_schaefer100': '/data/jiaxing/brain_binfile/abide_eyesclosed_full_schaefer100.bin',
-    'abide_adolescents_full_schaefer100': '/data/jiaxing/brain_binfile/abide_adolescents_full_schaefer100.bin',
-
-    'abide_full_AAL116': '/data/jiaxing/brain_binfile/abide_full_AAL116.bin',
-    'abide_male_full_AAL116': '/data/jiaxing/brain_binfile/abide_male_full_AAL116.bin',
-    'abide_female_full_AAL116': '/data/jiaxing/brain_binfile/abide_female_full_AAL116.bin',
-    'abide_children_full_AAL116': '/data/jiaxing/brain_binfile/abide_children_full_AAL116.bin',
-    'abide_eyesclosed_full_AAL116': '/data/jiaxing/brain_binfile/abide_eyesclosed_full_AAL116.bin',
-    'abide_adolescents_full_AAL116': '/data/jiaxing/brain_binfile/abide_adolescents_full_AAL116.bin',
-
-    'abide_AAL116': '/data/jiaxing/brain_binfile/abide_AAL116.bin',
-    'abide_harvard48': '/data/jiaxing/brain_binfile/abide_harvard48.bin',
-    'abide_kmeans100': '/data/jiaxing/brain_binfile/abide_kmeans100.bin',
-    'abide_schaefer100': '/data/jiaxing/brain_binfile/abide_schaefer100.bin',
-    'abide_ward100': '/data/jiaxing/brain_binfile/abide_ward100.bin',
-
-    'adni_AAL116': '/data/jiaxing/brain_binfile/adni_AAL116.bin',
-    'adni_harvard48': '/data/jiaxing/brain_binfile/adni_harvard48.bin',
-    'adni_kmeans100': '/data/jiaxing/brain_binfile/adni_kmeans100.bin',
-    'adni_schaefer100': '/data/jiaxing/brain_binfile/adni_schaefer100.bin',
-    'adni_ward100': '/data/jiaxing/brain_binfile/adni_ward100.bin',
-
-    'neurocon_AAL116': '/data/jiaxing/brain_binfile/neurocon_AAL116.bin',
-    'neurocon_harvard48': '/data/jiaxing/brain_binfile/neurocon_harvard48.bin',
-    'neurocon_kmeans100': '/data/jiaxing/brain_binfile/neurocon_kmeans100.bin',
-    'neurocon_schaefer100': '/data/jiaxing/brain_binfile/neurocon_schaefer100.bin',
-    'neurocon_ward100': '/data/jiaxing/brain_binfile/neurocon_ward100.bin',
-
-    'ppmi_AAL116': '/data/jiaxing/brain_binfile/ppmi_AAL116.bin',
-    'ppmi_harvard48': '/data/jiaxing/brain_binfile/ppmi_harvard48.bin',
-    'ppmi_kmeans100': '/data/jiaxing/brain_binfile/ppmi_kmeans100.bin',
-    'ppmi_schaefer100': '/data/jiaxing/brain_binfile/ppmi_schaefer100.bin',
-    'ppmi_ward100': '/data/jiaxing/brain_binfile/ppmi_ward100.bin',
-
-    'taowu_AAL116': '/data/jiaxing/brain_binfile/taowu_AAL116.bin',
-    'taowu_harvard48': '/data/jiaxing/brain_binfile/taowu_harvard48.bin',
-    'taowu_kmeans100': '/data/jiaxing/brain_binfile/taowu_kmeans100.bin',
-    'taowu_schaefer100': '/data/jiaxing/brain_binfile/taowu_schaefer100.bin',
-    'taowu_ward100': '/data/jiaxing/brain_binfile/taowu_ward100.bin',
-
-    'matai_AAL116': '/data/jiaxing/brain_binfile/matai_AAL116.bin',
-    'matai_harvard48': '/data/jiaxing/brain_binfile/matai_harvard48.bin',
-    'matai_kmeans100': '/data/jiaxing/brain_binfile/matai_kmeans100.bin',
-    'matai_schaefer100': '/data/jiaxing/brain_binfile/matai_schaefer100_pearson.bin',
-    'matai_ward100': '/data/jiaxing/brain_binfile/matai_ward100.bin',
+    'abide_full_schaefer100': '/path/to/binfile/abide_full_schaefer100.bin',
+    'adni_schaefer100': '/path/to/binfile/adni_schaefer100.bin',
+    'neurocon_schaefer100': '/path/to/binfile/neurocon_schaefer100.bin',
+    'ppmi_schaefer100': '/path/to/binfile/ppmi_schaefer100.bin',
+    'taowu_schaefer100': '/path/to/binfile/taowu_schaefer100.bin',
+    'matai_schaefer100': '/path/to/binfile/matai_schaefer100_pearson.bin'
 }
 
 
